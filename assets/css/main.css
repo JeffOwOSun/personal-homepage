@@ -1,5 +1,5 @@
 html, body {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
@@ -37,8 +37,11 @@ body {
 .navbar {
   text-transform: uppercase;
   font-weight: 700;
-  padding: 25px 0;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.icon-bar {
+  background-color: white;
 }
 
 .navbar .nav>li>a:hover, .nav>li>a:focus, .nav>li.active>a {
@@ -47,6 +50,7 @@ body {
 }
 
 blockquote {
+  /* margin: 20px; */
   font-family: "Noto Serif",serif;
   font-style: italic;
   font-size: 20px!important;
@@ -55,4 +59,52 @@ blockquote {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* code-block typing effect */
+
+.code-block {
+  font-family: Inconsolata, Monaco, 'Andale Mono', monospace;
+  font-size: 16px;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.code-block>p {
+  margin: 0;
+}
+
+.css-typing {
+  text-align: left!important;
+  width: 0;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
+.typeone {
+  animation: type 1.5s steps(50, end);
+  animation-delay: 1s;
+}
+.typetwo {
+  animation: type 1.5s steps(50, end);
+  animation-delay: 3s;
+}
+.typethree {
+  animation: type 1.5s steps(50, end);
+  animation-delay: 5s;
+}
+.typefour {
+  animation: type 1.5s steps(50, end);
+  animation-delay: 7s;
+}
+
+@keyframes type{
+  from { width: 0; }
+  to {width: 100%;}
+}
+
+@-webkit-keyframes type{
+  from { width: 0; }
+  to {width: 100%;}
 }
