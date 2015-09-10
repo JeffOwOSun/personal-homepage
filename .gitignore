@@ -1,0 +1,9 @@
+*.otf
+*.eot
+*.svg
+*.ttf
+*.woff
+*.woff2
+assets/images/
+*.min.css
+*.min.js
