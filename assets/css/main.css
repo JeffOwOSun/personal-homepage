@@ -1,7 +1,58 @@
-body {
-  padding-top: 50px;
+html, body {
+  height: 100vh;
 }
-.starter-template {
+
+body {
+  font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #fff;
+  background-color: rgba(0,0,0,0.46);
+}
+
+a {
+  color: #fff;
+}
+
+html {
+  background: url(../../assets/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.content {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   padding: 40px 15px;
   text-align: center;
+}
+
+.container-fluid {
+  max-width: 700px;
+}
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 25px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar .nav>li>a:hover, .nav>li>a:focus, .nav>li.active>a {
+  color: #18bc9c;
+  background-color: transparent;
+}
+
+blockquote {
+  font-family: "Noto Serif",serif;
+  font-style: italic;
+  font-size: 20px!important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
