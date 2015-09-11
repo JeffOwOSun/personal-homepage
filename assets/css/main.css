@@ -123,19 +123,31 @@ img {
   background-image: url(../../assets/images/4411.jpg);
 }
 #comp3711.course-image{
-  background-image: url(../../assets/images/3711.jpg);
+  background-image: url(../../assets/images/3711.png);
 }
 #comp3111.course-image{
-  background-image: url(../../assets/images/3111.jpg);
+  background-image: url(../../assets/images/3111.png);
+  background-size: contain;
 }
 
 .course-image {
   position: relative;
-  height: 25%;
+  height: 400px;
   background-size: cover;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: center center;
+}
+
+.course-image::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background-color: #000;
+  opacity: 0.3;
 }
 
 .image-overlay {
@@ -144,6 +156,15 @@ img {
   right: 0;
   top: 0;
   bottom: 0;
+  opacity: 0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.course-image:hover .image-overlay{
+  opacity: 1;
 }
 /* ghost element trick for vertical alignment */
 .image-overlay::before {
