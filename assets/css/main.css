@@ -39,6 +39,14 @@ section#skill {
   background-size: cover;
 }
 
+section#contact {
+  background: url(../../assets/images/bg-3.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .content {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 60px 15px;
@@ -182,10 +190,16 @@ div.course-image:hover .image-overlay{
 .button {
   border-color: #18bc9c;
   border-style: solid;
-  border-radius: 10px;
   border-width: 1px;
+  border-radius: 50px;
   font-size: 36px;
   display: inline-block;
   padding: 20px;
-  color: #18bc9c;
+  background-color: #18bc9c;
+  color: white;
+}
+
+.button:hover{
+  background-color: white;
+  color:#18bc9c;
 }
