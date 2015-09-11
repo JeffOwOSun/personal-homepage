@@ -5,7 +5,8 @@ html, body {
 body {
   font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #fff;
-  background-color: rgba(0,0,0,0.46);
+  padding-top: 100px;
+  background-color: transparent;
 }
 
 a {
@@ -20,18 +21,26 @@ html {
   background-size: cover;
 }
 
-body {
-  padding-top: 100px;
+html::after {
+  background-color: rgba(0,0,0,0.46);
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
 }
 
 .content {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  padding: 40px 15px;
+  margin: 40px 15px;
   text-align: center;
 }
 
 .container-fluid {
   max-width: 700px;
+  height: 100%;
 }
 
 .navbar {
@@ -62,7 +71,7 @@ img {
 }
 
 /* code-block typing effect */
-
+/*
 .code-block {
   font-family: Inconsolata, Monaco, 'Andale Mono', monospace;
   font-size: 16px;
@@ -107,4 +116,48 @@ img {
 @-webkit-keyframes type{
   from { width: 0; }
   to {width: 100%;}
+}
+*/
+
+#comp4411.course-image{
+  background-image: url(../../assets/images/4411.jpg);
+}
+#comp3711.course-image{
+  background-image: url(../../assets/images/3711.jpg);
+}
+#comp3111.course-image{
+  background-image: url(../../assets/images/3111.jpg);
+}
+
+.course-image {
+  position: relative;
+  height: 25%;
+  background-size: cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.image-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* ghost element trick for vertical alignment */
+.image-overlay::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 0%;
+  vertical-align: middle;
+}
+
+.overlay-text {
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 36px;
+  font-weight: 900;
 }
