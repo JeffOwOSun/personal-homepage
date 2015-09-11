@@ -6,14 +6,24 @@ body {
   font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #fff;
   padding-top: 100px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-a {
-  color: #fff;
+.white-background {
+  background-color: #fff;
+  color: #000!important;
 }
 
-html {
+section {
+  padding: 40px 0;
+  min-height: 700px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+section#home {
   background: url(../../assets/images/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -21,29 +31,26 @@ html {
   background-size: cover;
 }
 
-html::after {
-  background-color: rgba(0,0,0,0.46);
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
+section#skill {
+  background: url(../../assets/images/bg-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .content {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  margin: 40px 15px;
-  text-align: center;
+  margin: 60px 15px;
 }
 
 .container-fluid {
-  max-width: 700px;
+  max-width: 900px;
   height: 100%;
 }
 
 .navbar {
+  color: white;
   text-transform: uppercase;
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.4);
@@ -123,7 +130,7 @@ img {
   background-image: url(../../assets/images/4411.jpg);
 }
 #comp3711.course-image{
-  background-image: url(../../assets/images/3711.png);
+  background-image: url(../../assets/images/3711.jpg);
 }
 #comp3111.course-image{
   background-image: url(../../assets/images/3111.png);
@@ -137,17 +144,6 @@ img {
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.course-image::before {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  content: "";
-  background-color: #000;
-  opacity: 0.3;
 }
 
 .image-overlay {
@@ -181,4 +177,15 @@ div.course-image:hover .image-overlay{
   vertical-align: middle;
   font-size: 36px;
   font-weight: 900;
+}
+
+.button {
+  border-color: #18bc9c;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  font-size: 36px;
+  display: inline-block;
+  padding: 20px;
+  color: #18bc9c;
 }
